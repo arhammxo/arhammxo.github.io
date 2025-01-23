@@ -298,7 +298,7 @@
 
         <!-- Education & Experience Timeline -->
         <section class="section timeline-container" id="experience">
-          <h2 class="section-title">Education & Experience</h2>
+          <h2 class="h3 section-title">Education & Experience: </h2>
 
           <div class="timeline">
             <div class="timeline-item left">
@@ -447,7 +447,7 @@
               <div class="project-content section-content">
                 <p class="section-subtitle">My Works</p>
 
-                <h2 class="h3 section-title">here's Some of my Projects!</h2>
+                <h2 class="h3 section-title">here are some of my Projects!</h2>
 
                 <p class="section-text">
                   I have worked on various projects, from simple web apps to
@@ -660,60 +660,6 @@
             </button>
           </div>
         </section>
-
-        <style>
-          .hidden-achievement {
-            display: none;
-          }
-          
-          .achievements-button-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-          }
-          
-          .show-all .hidden-achievement {
-            display: block;
-          }
-
-          .circular-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: none;
-            background: var(--bg-secondary);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s ease;
-          }
-
-          .circular-btn:hover {
-            background: var(--primary);
-          }
-
-          .arrow-icon {
-            transition: transform 0.3s ease;
-            font-size: 1.2rem;
-            color: var(--text-color);
-          }
-
-          .arrow-icon.rotated {
-            transform: rotate(180deg);
-          }
-        </style>
-
-        <script>
-          document.getElementById('showMoreAchievements').addEventListener('click', function() {
-            const grid = document.getElementById('achievementsGrid');
-            const arrowIcon = this.querySelector('.arrow-icon');
-            
-            grid.classList.toggle('show-all');
-            arrowIcon.classList.toggle('rotated');
-          });
-        </script>
 
         <!-- 
         - #CONTACT

@@ -123,3 +123,17 @@ var typed = new Typed("#typed-text", {
 var typed = new Typed("#typed-text-hello", {
   strings: ["Hey, it's me!"],
 });
+
+/**
+ * achievements toggle
+ */
+const achievementsGrid = document.getElementById('achievementsGrid');
+const showMoreBtn = document.getElementById('showMoreAchievements');
+const arrowIcon = showMoreBtn?.querySelector('.arrow-icon');
+
+if (showMoreBtn && arrowIcon) {
+  showMoreBtn.addEventListener('click', function() {
+    achievementsGrid.classList.toggle('show-all');
+    arrowIcon.classList.toggle('rotated');
+  });
+}

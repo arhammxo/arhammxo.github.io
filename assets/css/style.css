@@ -872,7 +872,7 @@ main {
 }
 
 /*-----------------------------------*\
- * #Achievements
+ * #ACHIEVEMENTS
 \*-----------------------------------*/
 
 .achievements {
@@ -891,14 +891,80 @@ main {
   color: var(--color-primary);
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-1);
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
 }
 
 .achievement-icon {
   font-size: 2.5rem;
   color: var(--raw-seinna);
   margin-bottom: 1rem;
+}
+
+.hidden-achievement {
+  display: none;
+}
+
+.achievements-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.show-all .hidden-achievement {
+  display: block;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.circular-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.circular-btn:hover {
+  background: var(--raw-seinna);
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Achievements */
+@media (min-width: 992px) {
+  .achievements-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*-----------------------------------*\
