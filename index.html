@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arham</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./myfav.png" type="image/png" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body id="top" class="dark_theme">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="#">arham<span>.</span></a>
+        </h1>
+
+        <div class="navbar-actions">
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#about" class="navbar-link">About.</a>
+            </li>
+
+            <li>
+              <a href="#experience" class="navbar-link">Experience.</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills.</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="navbar-link">Projects.</a>
+            </li>
+
+            <li>
+              <a href="#achievements" class="navbar-link">Achievements.</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact.</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <!-- 
+        - #Profile
+      -->
+
+        <section class="hero" id="home">
+          <div
+            style="
+              width: 100% !important;
+              /* display: flex; */
+              margin-top: 70px !important;
+
+              justify-content: space-between;
+            "
+          >
+            <div class="left-section" style="width: 100%">
+              <figure class="">
+                <img
+                  src="./assets/images/studentavatar.png"
+                  alt="A man in a blue shirt with a happy expression"
+                  class="hero-banner"
+                  style="max-width: 500px; width: 90vw"
+                />
+              </figure>
+            </div>
+
+            <div
+              class="right-section"
+              style="width: 80% !important; padding-top: 25px; margin: auto"
+            >
+              <div style="display: flex">
+                <span
+                  class="typed-text"
+                  style="font-weight: bolder"
+                  id="typed-text-hello"
+                ></span>
+              </div>
+              <h2>
+                <a href="/"> arham </a>
+              </h2>
+              <h4 style="font-weight: lighter; font-size: medium">
+                As a final year B.Tech. AI & ML student at Vellore Institute of Technology, I am driven by a
+                passion for problem solving and a desire to contribute to the
+                field of computer science and Artificial Intelligence. With a
+                strong foundation in programming languages, I am eager to learn
+                more about the ever-evolving world of technology.
+              </h4>
+
+              <div style="display: flex; min-height: 60px; align-items: center">
+                <p style="min-width: max-content">I know:&nbsp;</p>
+                <p
+                  class="typed-text"
+                  style="font-weight: bolder !important"
+                  id="typed-text"
+                ></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Load library from the CDN -->
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+          <ul class="hero-social-list">
+            <li>
+              <a
+                href="mailto:arhammxo@gmail.com"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                <div class="tooltip">Gmail</div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arhammxo/"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/arhammxo/"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github fa-spin-pulse"></i>
+                <div class="tooltip">Github</div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://leetcode.com/u/arhamm/"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-hackerrank"></i>
+                <div class="tooltip">LeetCode</div>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#stats" class="scroll-down">Scroll</a>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/pankil-soni-5a0541170/"
+                target="_blank"
+                class="stats-card"
+              >
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-1.png"
+                    alt="Badge icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  4 <strong>Internships Completed</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#projects" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-2.png"
+                    alt="Checkmark icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  15<strong>Completed Projects</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#experience" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-3.png"
+                    alt="Peoples rating icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">8.71 <strong>Current GPA</strong></h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/Untitled-3.png"
+              alt="A man in a alice blue shirt with a thinking expression"
+              class="w-100"
+              style="width: 300px; max-width: 100%; height: auto;"
+            />
+          </figure>
+
+          <div class="about-content section-content">
+            <p class="section-subtitle">About me</p>
+
+            <h2 class="h3 section-title">
+              <span style="font-size: small !important">Need a</span>
+              <span style="font-size: medium !important"
+                >AI & Machine Learning Engineer</span
+              >
+              OR
+              <span style="font-size: medium !important"
+                >Full Stack Engineer?</span
+              >
+              I can Help You!
+            </h2>
+
+            <p class="section-text">
+              I'm a Computer Science student specializing in AI and Machine Learning, passionate about creating innovative
+              <strong>Machine/Deep Learning Notebooks</strong> as well as
+              <strong>Full Stack Web Applications.</strong>  My experience includes developing context-aware AI solutions, integrating machine learning models with web platforms, and creating impactful technologies like fall detection systems and safety apps. I primarily work with the 
+              <strong>MERN</strong> stack for web development and
+              <strong>Python</strong> for Machine Learning.
+            </p>
+
+            <div class="btn-group">
+              <a
+                href="https://drive.google.com/file/d/1XzpJBDVBx_RTzBshgDTjkEtD12rVOgap/view?usp=sharing"
+                class="btn btn-secondary"
+                target="_blank"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Education & Experience Timeline -->
+        <section class="section timeline-container" id="experience">
+          <h2 class="section-title">Education & Experience</h2>
+
+          <div class="timeline">
+            <div class="timeline-item left">
+              <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Persist Ventures</h3>
+              <p><strong>Lead AI Engineer</strong> · Remote</p>
+              <div class="timeline-date">Feb 2024 - Oct 2024</div>
+              <p class="section-text">
+                • Workplete – Optimized Multi-Action Agent backend, fixed bugs, and enhanced system prompt, boosting productivity.<br>
+                • OpenDroids – Built virtual assistant handling 1,000+ daily queries with 95%+ accuracy<br>
+                • AI Livestream – Developed real-time news scraping API and AI-powered teleprompt script generation, improving content delivery speed by 40%
+              </p>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>ElhiTech</h3>
+              <p><strong>SDE Intern</strong> · Remote</p>
+              <div class="timeline-date">Sept 2023 - Jan 2024</div>
+              <p class="section-text">
+                • Revamped enterprise website using Next.js, increasing customer interaction by 50%<br>
+                • Launched Microsoft Outlook and Google Calendar extensions, improving user engagement by 40%
+              </p>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>TATA STEEL Research and Development</h3>
+              <p><strong>Research Intern</strong></p>
+              <div class="timeline-date">Oct 2023 - Dec 2023</div>
+              <p class="section-text">
+                • Developed YOLO-based pipeline for automatic furnace fallout detection<br>
+                • Created frame extraction tool processing 500+ videos in two weeks
+              </p>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Dubsync.AI</h3>
+              <p><strong>Machine Learning Engineer</strong></p>
+              <div class="timeline-date">Mar 2023 - Aug 2023</div>
+              <p class="section-text">
+                • Researched deep learning frameworks for face detection<br>
+                • Automated face detection pipeline, saving 100+ manual hours
+              </p>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Vellore Institute of Technology</h3>
+              <p><strong>Bachelor of Technology in Comp Sci with spec in AI & ML</strong></p>
+              <div class="timeline-date">2021 - 2025</div>
+              <p class="section-text">CGPA: 8.71</p>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <h3>Sunbeam School Varuna (CBSE)</h3>
+              <p>Higher Secondary Education</p>
+              <div class="timeline-date">2018 - 2020</div>
+              <p class="section-text">Class 12th: 93%</p>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <h3>De-Nobili School CMRI (ICSE)</h3>
+              <p>Secondary Education</p>
+              <div class="timeline-date">2008 - 2018</div>
+              <p class="section-text">Class 10th: 91%</p>
+            </div>
+
+            <div class="timeline-item right">
+              <div class="timeline-icon">
+                <i class="fas fa-plane"></i>
+              </div>
+              <h3>National University of Singapore</h3>
+              <p><strong>Exchange Program - AI and Robotics</strong></p>
+              <div class="timeline-date">December 2023</div>
+              <p class="section-text">1 of 40 students selected from all VIT campuses for the AI and Robotics cohort</p>
+            </div>
+
+            <div class="timeline-item left">
+              <div class="timeline-icon">
+                <i class="fas fa-plane"></i>
+              </div>
+              <h3>Tamkang University</h3>
+              <p><strong>Exchange Program - Sustainability and Development</strong></p>
+              <div class="timeline-date">Summer 2023</div>
+              <p class="section-text">Selected for exchange program focusing on sustainability and development</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section class="skills" id="skills">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
+
+            <h2 class="h3 section-title">
+              What My Programming Skills Included?
+            </h2>
+
+            <p class="section-text">
+              I love to develop simple, intuitive and responsive web apps and
+              machine learning models.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+              <button class="toggle-btn" data-toggle-btn>Libraries</button>
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+          </div>
+
+          <div class="skills-box" data-skills-box>
+            <ul id="skillsList" class="skills-list"></ul>
+            <ul id="librariesList" class="libraries-list"></ul>
+            <ul id="toolsList" class="tools-list"></ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECTS
+      -->
+
+        <section class="project" id="projects">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">My Works</p>
+
+                <h2 class="h3 section-title">here's Some of my Works!</h2>
+
+                <p class="section-text">
+                  I have worked on various projects, from simple web apps to
+                  machine learning models. Here are some of my works.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/project-1.png"
+                    class="w-100"
+                    alt="NextNews"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">NextNews</h3>
+
+                  <time class="publish-date" datetime="2024-02"
+                    >February 2024</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://workplete.com/"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/project-2.png"
+                    class="w-100"
+                    alt="ai form autofiller"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">AI Automatic Form Filler</h3>
+
+                  <time class="publish-date" datetime="2024-04"
+                    >April 2024</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://workplete.com/"
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/project-3.png"
+                    class="w-100"
+                    alt="Workplete"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Workplete</h3>
+
+                  <time class="publish-date" datetime="2024-11"
+                    >November 2024</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/project-4.png"
+                    class="w-100"
+                    alt="Gaia's Touch"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    Gaia's Touch
+                  </h3>
+
+                  <time class="publish-date" datetime="2024-03"
+                    >March 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/project-6.png"
+                    class="w-100"
+                    alt="SheSafe"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">SheSafe</h3>
+
+                  <time class="publish-date" datetime="2024-09"
+                    >September 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://opendroids.com/"
+                target="_blank"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/project-5.png"
+                    class="w-100"
+                    alt="OpenDroids"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">OpenDroids</h3>
+
+                  <time class="publish-date" datetime="2024-08"
+                    >August 2024</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/arhammxo=repositories"
+                target="_blank"
+                ><button class="load-more">See more</button></a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements" id="achievements">
+          <h2 class="h3 section-title">Achievements:</h2>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <i class="fas fa-trophy achievement-icon"></i>
+              <h3>Smart India Hackathon 2023</h3>
+              <p class="section-text">Winner - ₹1,00,000 Prize Money for "SheSafe" project</p>
+            </div>
+            
+            <div class="achievement-card">
+              <i class="fas fa-award achievement-icon"></i>
+              <h3>NUS AI and Robotics Cohort</h3>
+              <p class="section-text">Runner Up for innovative health-based solution</p>
+            </div>
+
+            <div class="achievement-card">
+              <i class="fas fa-medal achievement-icon"></i>
+              <h3>Amdoc's Talent Tank</h3>
+              <p class="section-text">Secured Top-10 position nationwide</p>
+            </div>
+
+            <div class="achievement-card">
+              <i class="fas fa-star achievement-icon"></i>
+              <h3>Google's Solution Challenge'22</h3>
+              <p class="section-text">Special Mention for "Gaia's Touch"</p>
+            </div>
+
+            <div class="achievement-card">
+              <i class="fas fa-code achievement-icon"></i>
+              <h3>Competitive Programming</h3>
+              <p class="section-text">
+                Numerous hackathons and coding competitions
+              </p>
+            </div>
+
+            <div class="achievement-card">
+              <i class="fas fa-laptop-code achievement-icon"></i>
+              <h3>HackAP Hackathon</h3>
+              <p class="section-text">Runner's Up in nationwide hackathon at Visakhapatnam</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="contact" id="contact">
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h3 section-title">
+              Have You Any Question? Please Drop a Message
+            </h2>
+
+            <p class="section-text">
+              Get in touch and let me know how i can help. Fill out the form and
+              i'll be in touch as soon as possible.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <address class="contact-info">
+                    S 20/10-A, Varuna Bridge, Varanasi, Uttar Pradesh, India - 221002
+                  </address>
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="tel:9939413786" class="contact-info"
+                    >+91 99394 13786</a
+                  >
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a href="mailto:arhammxo@gmail.com" class="contact-info"
+                    >arhammxo@gmail.com</a
+                  >
+
+                  <a
+                    href="mailto:anas.21bce7711@vitapstudent.ac.in"
+                    class="contact-info"
+                    >anas.21bce7711@vitapstudent.ac.in</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/arhammxo/"
+                      target="_blank"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Linkedin</div>
+
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://github.com/arhammxo"
+                      target="_blank"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Github</div>
+
+                      <i class="fa-brands fa-github fa-spin-pulse"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/iblamearham/"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Instagram</div>
+
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <form action="https://formspree.io/f/xnnjqjdr" method="POST" class="contact-form">
+            <div class="form-wrapper">
+              <label for="name" class="form-label">Name</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="e.g John Doe"
+                  class="input-field"
+                />
+
+                <ion-icon name="person-circle"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="email" class="form-label">Email</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="e.g johndoe@mail.com"
+                  class="input-field"
+                />
+
+                <ion-icon name="mail"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="phone" class="form-label">Phone</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="Phone Number"
+                  class="input-field"
+                />
+
+                <ion-icon name="call"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="message" class="form-label">Message</label>
+
+              <div class="input-wrapper">
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  placeholder="Write message..."
+                  class="input-field"
+                ></textarea>
+
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#"> arham<span>.</span> </a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2024 <a href="https://github.com/arhammxo/">arhammxo</a>.
+          All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      async function fetchSkills() {
+        try {
+          const response = await fetch("./assets/skills.json");
+          const skills = await response.json();
+
+          return { data: skills, type: "skills" };
+        } catch (error) {
+          console.error("Error fetching skills:", error);
+        }
+      }
+
+      async function fetchTools() {
+        try {
+          const response = await fetch("./assets/tools.json");
+          const tools = await response.json();
+
+          return { data: tools, type: "tools" };
+        } catch (error) {
+          console.error("Error fetching tools:", error);
+        }
+      }
+
+      async function fetchLibraries() {
+        try {
+          const response = await fetch("./assets/libraries.json");
+          const libraries = await response.json();
+
+          return { data: libraries, type: "libraries" };
+        } catch (error) {
+          console.error("Error fetching libraries:", error);
+        }
+      }
+
+      function createlement(list, data) {
+        data.forEach((skill) => {
+          const listItem = document.createElement("li");
+          const skillCard = document.createElement("div");
+          skillCard.className = "skill-card";
+
+          const tooltip = document.createElement("div");
+          tooltip.className = "tooltip";
+          tooltip.textContent = skill.name;
+
+          const cardIcon = document.createElement("div");
+          cardIcon.className = "card-icon";
+
+          const image = document.createElement("img");
+          image.src = skill.image;
+          image.style.minHeight = "48px";
+          image.style.minWidth = "48px";
+          image.style.maxHeight = "63px";
+          image.style.maxWidth = "63px";
+          image.alt = `${skill.name} logo`;
+
+          cardIcon.appendChild(image);
+          skillCard.appendChild(tooltip);
+          skillCard.appendChild(cardIcon);
+          listItem.appendChild(skillCard);
+          list.appendChild(listItem);
+        });
+      }
+
+      // Function to render skillsF
+      function renderSkills(skills) {
+        if (skills.type === "skills") {
+          console.log(skills.data);
+          const list = document.getElementById("skillsList");
+          createlement(list, skills.data);
+        } else if (skills.type === "tools") {
+          const list = document.getElementById("toolsList");
+          createlement(list, skills.data);
+        } else {
+          const list = document.getElementById("librariesList");
+          createlement(list, skills.data);
+        }
+      }
+
+      // Fetch skills and render them
+      fetchSkills().then(renderSkills);
+      fetchTools().then(renderSkills);
+      fetchLibraries().then(renderSkills);
+    </script>
+  </body>
+</html>
