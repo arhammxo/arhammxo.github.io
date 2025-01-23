@@ -611,7 +611,8 @@
         <!-- Achievements Section -->
         <section class="achievements" id="achievements">
           <h2 class="h3 section-title">Achievements:</h2>
-          <div class="achievements-grid">
+          <div class="achievements-grid" id="achievementsGrid">
+            <!-- Initial visible achievements -->
             <div class="achievement-card">
               <i class="fas fa-trophy achievement-icon"></i>
               <h3>Smart India Hackathon 2023</h3>
@@ -630,13 +631,14 @@
               <p class="section-text">Secured Top-10 position nationwide</p>
             </div>
 
-            <div class="achievement-card">
+            <!-- Hidden achievements -->
+            <div class="achievement-card hidden-achievement">
               <i class="fas fa-star achievement-icon"></i>
               <h3>Google's Solution Challenge'22</h3>
               <p class="section-text">Special Mention for "Gaia's Touch"</p>
             </div>
 
-            <div class="achievement-card">
+            <div class="achievement-card hidden-achievement">
               <i class="fas fa-code achievement-icon"></i>
               <h3>Competitive Programming</h3>
               <p class="section-text">
@@ -645,13 +647,73 @@
               </p>
             </div>
 
-            <div class="achievement-card">
+            <div class="achievement-card hidden-achievement">
               <i class="fas fa-laptop-code achievement-icon"></i>
               <h3>HackAP Hackathon</h3>
               <p class="section-text">Runner's Up in nationwide hackathon at Visakhapatnam</p>
             </div>
           </div>
+          
+          <div class="achievements-button-container">
+            <button id="showMoreAchievements" class="circular-btn">
+              <ion-icon name="chevron-down-outline" class="arrow-icon"></ion-icon>
+            </button>
+          </div>
         </section>
+
+        <style>
+          .hidden-achievement {
+            display: none;
+          }
+          
+          .achievements-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+          }
+          
+          .show-all .hidden-achievement {
+            display: block;
+          }
+
+          .circular-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background: var(--bg-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+          }
+
+          .circular-btn:hover {
+            background: var(--primary);
+          }
+
+          .arrow-icon {
+            transition: transform 0.3s ease;
+            font-size: 1.2rem;
+            color: var(--text-color);
+          }
+
+          .arrow-icon.rotated {
+            transform: rotate(180deg);
+          }
+        </style>
+
+        <script>
+          document.getElementById('showMoreAchievements').addEventListener('click', function() {
+            const grid = document.getElementById('achievementsGrid');
+            const arrowIcon = this.querySelector('.arrow-icon');
+            
+            grid.classList.toggle('show-all');
+            arrowIcon.classList.toggle('rotated');
+          });
+        </script>
 
         <!-- 
         - #CONTACT
