@@ -1,2 +1,1 @@
-# pankil-soni.github.io
-My personal portfolio Website
+The Portfolio Website hosted on GitHub pages.
